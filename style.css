@@ -1,0 +1,78 @@
+body {
+    font: 10pt verdana;
+    line-height: 16px;
+    color: #636b6d;
+    text-align: left;
+    background: url("http://i.imgur.com/vDfRb7R.png") fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font: 13pt verdana;
+    font-weight: bold;        
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #246cbd;
+    background: #fff;
+    padding: 3px;
+}
+
+h2 {
+    font: 7pt verdana;
+    font-weight: bold;        
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #246cbd;
+    background: #fff;
+    padding: 3px;
+}
+
+#pic {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background: url("http://i.imgur.com/5O5vNyC.png") fixed;
+    padding: 12px;
+}
+
+.box2 {
+    height: 235px;
+    background: url("http://i.imgur.com/te5zX8O.png") fixed;
+    padding: 10px;
+    overflow: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 50px;
+    left: 9%;
+    transform: translateX(-50%);
+    width: auto;
+    background: url("http://i.imgur.com/5O5vNyC.png") fixed;
+    padding: 8px;
+    opacity: 0.2;
+}
+
+/* estilo para caixas maiores */
+.box.large-2 {
+    grid-column: span 2;
+}
+.box.large-3 {
+    grid-column: span 3;
+}
